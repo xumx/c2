@@ -11,8 +11,9 @@ routes = (app) ->
 		cillum dolore eu fugiat nulla pariatur. Excepteur sint <span class="fallacy tip" title="Fallacious Shit">occaecat cupidatat</span> non
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.']
 
-		quotes = ['
-		Hotkeys:
+		quotes = ['Temporary feature: Highlight a piece of text and press one of the hotkeys below
+		<br/>
+		<br/>Hotkeys:
 		<br/>F → Fallacy
 		<br/>V → Verified
 		<br/>B → Bias

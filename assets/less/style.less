@@ -20,7 +20,7 @@ body {
    .bias 	  {background-color: @orange;}
 
    .row {
-     margin-top: 25px;
+     margin-top: 20px;
    }
 
    .alert {
@@ -28,22 +28,27 @@ body {
    }
 
    .container {
-    .post, .newpost {
-      #gradient > .vertical(rgba(0,0,0,.15), rgba(0,0,0,0));
-      background-color: rgba(0,0,0,.3);
-      #font > @monoFontFamily;
-      color: @white;
-      text-shadow: 0 1px 1px rgba(0,0,0,.25);
-      @shadow: inset 0 1px 3px rgba(0,0,0,.25), 0 1px 0 rgba(255,255,255,.25);
-      .box-shadow(@shadow);
-      .border-radius(6px);
-      white-space: pre-wrap;
-      margin: 20px 0;
-      padding: 20px;
-      //width: @postWidth;
-    }
-    .postmenu {
-      margin-top: 20px;
+
+    .main {
+      margin-top: 40px;
+
+      .post, .newpost {
+        #gradient > .vertical(rgba(0,0,0,.15), rgba(0,0,0,0));
+        background-color: rgba(0,0,0,.3);
+        #font > @monoFontFamily;
+        color: @white;
+        text-shadow: 0 1px 1px rgba(0,0,0,.25);
+        @shadow: inset 0 1px 3px rgba(0,0,0,.25), 0 1px 0 rgba(255,255,255,.25);
+        .box-shadow(@shadow);
+        .border-radius(6px);
+        white-space: pre-wrap;
+        margin: 0;
+        padding: 20px;
+        //width: @postWidth;
+      }
+      .postmenu, #newpost {
+        margin-top: 5px;
+      }
     }
   }
 
@@ -57,12 +62,20 @@ body {
     text-shadow: 0 1px 0 lighten(@blue,25%);
   }
 
+  .navbar {
+    top: -30px;
+  }
+
   #pulldown {
-    background-color:@grayDarker;
-    color:@grayLighter;
-    .size(40px,25px);
-    font-size: 25px;
+    position: fixed;
+    z-index: 101;
+    top:-3px;
+    left:10px;
+
+    text-shadow: 0 1px 0 @orange;
+    color:@grayDark;
+    font-size: 50px;
     font-weight: bold;
     text-align: center;
-    .border-radius(6px);
+    .border-radius(3px);
   }

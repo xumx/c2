@@ -60,6 +60,10 @@ $(document).ready(function() {
 		}
 	});
 
+	$('.tagbutton').click(function() {
+		highlight('fallacy');
+	});
+
 	$('.newpost').flexible();
 	$('.newpost').bind('focus',function() {
 		$('.newpost-menu').show();
@@ -70,11 +74,18 @@ $(document).ready(function() {
 
 	$('.newpost-menu').hide();
 
-	$('.navbar').bind('mouseout', function() {
-		$(this).animate({top:'-30'},500)
+	//Hiding Navigation Bar
+	$('#pulldown').click(function() {
+		$('.navbar').animate({top:'0'},500)
 	});
-	$('.navbar').bind('mouseover', function() {
-		$(this).animate({top:'0'},500)
+	$('#pulldown').bind('mouseover',function() {
+		$(this).animate({top:'5px'},500)
+	});
+	$('#pulldown').bind('mouseout',function() {
+		$(this).animate({top:'-3px'},500)
+	});
+	$('.navbar').click(function() {
+		$(this).animate({top:'-30'},500)
 	});
 
 	//HotKey Bindings
@@ -89,5 +100,4 @@ $(document).ready(function() {
 	});
 
 	addHandlers($('.tip'));
-	
 });
