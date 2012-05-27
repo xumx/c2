@@ -1,0 +1,68 @@
+@import "bootstrap/bootstrap.less";
+
+html, body{
+	height: 100%;
+}
+
+body {
+  #gradient > .vertical(darken(@blue,15%),lighten(@blue,15%));
+}
+
+@import "bootstrap/responsive.less";
+
+/* ===== Primary Styles ========================================================
+   Author: Max XU
+   ========================================================================== */
+   @postWidth: 100%;
+
+   .fallacy  {background-color: @red;}
+   .verified {background-color: @green;}
+   .bias 	  {background-color: @orange;}
+
+   .row {
+     margin-top: 25px;
+   }
+
+   .alert {
+     display:none;
+   }
+
+   .container {
+    .post, .newpost {
+      #gradient > .vertical(rgba(0,0,0,.15), rgba(0,0,0,0));
+      background-color: rgba(0,0,0,.3);
+      #font > @monoFontFamily;
+      color: @white;
+      text-shadow: 0 1px 1px rgba(0,0,0,.25);
+      @shadow: inset 0 1px 3px rgba(0,0,0,.25), 0 1px 0 rgba(255,255,255,.25);
+      .box-shadow(@shadow);
+      .border-radius(6px);
+      white-space: pre-wrap;
+      margin: 20px 0;
+      padding: 20px;
+      //width: @postWidth;
+    }
+    .postmenu {
+      margin-top: 20px;
+    }
+  }
+
+  #quote {
+    position: absolute;
+    left:100px;
+    top:450px;
+    width:150px;
+    color:darken(@blue,20%);
+    font-weight: bold;
+    text-shadow: 0 1px 0 lighten(@blue,25%);
+  }
+
+  #pulldown {
+    background-color:@grayDarker;
+    color:@grayLighter;
+    .size(40px,25px);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    .border-radius(6px);
+  }

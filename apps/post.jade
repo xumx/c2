@@ -1,0 +1,23 @@
+.container
+	div.alert
+	
+	
+
+	div.offset2
+		each post in posts
+			div.row.span7
+				div.post.span5
+					!=post
+				div.postmenu
+					button.btn.btn-mini.btn-primary.span1.editbutton Edit
+					br
+					button.btn.btn-mini.btn-primary.span1 Tag
+		
+		div.row.span7
+			textarea.newpost.span5
+			div
+				button.btn.btn-mini.btn-primary.span1#newpost Submit
+
+
+div#quote
+	!=quote
