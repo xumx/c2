@@ -1,10 +1,12 @@
 express = require 'express'
+# data = require './data'
 
 app = express.createServer()
 app.set 'view engine', 'jade'
+app.use express.static(__dirname + '/assets')
+app.listen process.env.C9_PORT
+
 # app.use require('connect-assets')()
-app.use express.static('assets')
-app.listen 3333
 
 # all = require('now').initialize(app)
 # all.now.variable = 666

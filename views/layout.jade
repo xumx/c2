@@ -23,23 +23,7 @@ html
 				| or
 				a(href='http://www.google.com/chromeframe/?redirect=true') install Google Chrome Frame
 				| to experience this site.
-		div#pulldown ⬇
-		.navbar.navbar-fixed-top
-			.navbar-inner
-				.container
-					a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
-						span.icon-bar
-						span.icon-bar
-						span.icon-bar
-					a.brand(href='/') Challenge List
-					.nav-collapse
-						ul.nav
-							li.active
-								a(href='/post') Post
-							li
-								a(href='/#1') C1
-							li
-								a(href='/#2') C2
+        !=head
 		!=body
 		script(src='//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js')
 		script
